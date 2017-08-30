@@ -3,6 +3,8 @@ Automatic music composition based on Machine Learning and Markov Chains
 
 This code will generate a music score based on a input score on midi format. Uses **Markov Chains and probabilty tweaks** with 
 Pandas in order to build the score. 
+Also uses Music21 MIT library (http://web.mit.edu/music21/) to manipulate input score and create outout score. 
+
 It was designed with the "For the love of God" score by Steve Vai - probably the best guitar virtuoso in the music business.
 The code also tries to understand the duration between notes and octaves, avoiding sudden changes of those. For example: if we are building 
 a melody, then the duration must be similar on the riff. Similar when we are solo-ing, we must concatenate low duration notes.
