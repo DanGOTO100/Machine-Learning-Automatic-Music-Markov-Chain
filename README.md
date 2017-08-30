@@ -22,7 +22,17 @@ and probabilities to  go for one note to other. Pitch and duration are "tweaked"
 Further study would be to parametrize automatically the tweaks for duration and octaves and create a numpy array of probabiity for those.
 Detecting usual duration, lenght and octaves for each part of the songs and appling it automatically. In this code is set manually via 
 conditional statements like:
-'''
+```
              if durations == 'S':
                 x = np.random.choice(['64th','32nd','16th','eighth'], 1, p=[0.20,0.20,0.30,0.30])
-'''
+```
+
+An example of how to use the code:
+
+```
+
+
+Convlist = ConverMiditoList('C:\\Tabs\\FTLOG.mid')
+Chainfirstorder = createMarkovChain(Convlist)
+buildsong(Chainfirstorder,500)
+```
