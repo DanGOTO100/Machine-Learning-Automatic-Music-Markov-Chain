@@ -1,4 +1,4 @@
-# Machine-Leaning-Automatic-Music-Markov-Chain
+# Machine-Learning-Automatic-Music-Markov-Chain
 Automatic music composition based on Machine Learning and Markov Chains
 
 This code will generate a music score based on a input score on midi format. Uses **Markov Chains and probabilty tweaks** with 
